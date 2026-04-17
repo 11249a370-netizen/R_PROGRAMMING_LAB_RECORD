@@ -1,0 +1,10 @@
+#Industrial Machine Safety System
+temperature <- 75
+pressure <- 130
+vibration <- 6
+ 
+if(temperature > 80 | pressure > 120 | vibration > 7){
+print("Machine Shutdown")
+} else {
+print("Machine Running Normally")
+}
