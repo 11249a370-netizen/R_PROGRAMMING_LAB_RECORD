@@ -1,0 +1,9 @@
+#Employee Performance Appraisal System
+attendance <- 92
+performance <- 8.5
+project_completed <- TRUE
+if(attendance >= 90 & performance >= 8 & project_completed){
+print("Eligible for Appraisal")
+} else {
+print("Not Eligible for Appraisal")
+}
