@@ -1,0 +1,11 @@
+#Hospital Patient Risk Classification
+bp <- 150
+sugar <- 210
+if(bp > 140 & sugar > 200){
+risk <- "High Risk"
+} else if((bp >= 120 & bp <= 140) | (sugar >= 140 & sugar <= 200)){
+risk <- "Medium Risk"
+} else {
+risk <- "Low Risk"
+}
+print(risk)
