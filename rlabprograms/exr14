@@ -1,0 +1,9 @@
+#Dynamic Pricing in Ride-Hailing App
+high_demand <- TRUE
+available_drivers <- 30
+ 
+if(high_demand & available_drivers < 50){
+print("Surge Pricing Applied")
+} else {
+print("Normal Pricing")
+}
