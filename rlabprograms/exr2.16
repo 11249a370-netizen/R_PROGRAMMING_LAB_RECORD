@@ -1,0 +1,9 @@
+#University Admission Screening
+entrance_score <- 78
+twelfth_marks <- 82
+age <- 22
+if(entrance_score >= 70 & twelfth_marks >= 75 & age <= 25){
+print("Admission Granted")
+} else {
+print("Admission Rejected")
+}
