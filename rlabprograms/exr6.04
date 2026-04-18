@@ -1,0 +1,9 @@
+#Patient Medical Record System (Lists)
+patient <- list(
+PatientID = 202,
+Name = "Ravi",
+Age = 45,
+TestResults = c(120, 140, 130)
+)
+patient
+patient$TestResults
