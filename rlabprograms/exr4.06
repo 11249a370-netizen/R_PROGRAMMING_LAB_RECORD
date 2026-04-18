@@ -1,0 +1,33 @@
+#Corporate Employee Payroll System
+# Employee details
+emp_details <- data.frame(
+EmpID = c(101, 102),
+Name = c("Rahul", "Sneha"),
+Dept = c("IT", "HR")
+)
+# Salary components
+salary <- data.frame(
+Basic = c(30000, 35000),
+HRA = c(6000, 7000),
+DA = c(3000, 3500)
+)
+# Performance rating
+rating <- data.frame(
+Rating = c(4.5, 4.2)
+)
+# Merge column-wise
+payroll <- cbind(emp_details, salary, rating)
+payroll
+# Add new employee
+new_emp <- data.frame(
+EmpID = 103,
+Name = "Kiran",
+Dept = "Finance",
+Basic = 40000,
+HRA = 8000,
+DA = 4000,
+Rating = 4.8
+ 
+)
+payroll <- rbind(payroll, new_emp)
+payroll
