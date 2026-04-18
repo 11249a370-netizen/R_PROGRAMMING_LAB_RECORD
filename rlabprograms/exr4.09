@@ -1,0 +1,28 @@
+#Smart Agriculture Monitoring System (Advanced) 
+# Field info
+field_info <- data.frame(
+FieldID = c(1, 2),
+Crop = c("Rice", "Wheat")
+)
+# Sensor data
+sensor_data <- data.frame(
+Moisture = c(45, 38),
+Temp = c(32, 29)
+)
+# Yield estimate
+yield <- data.frame(
+ExpectedYield = c(4.5, 3.8)
+)
+# Combine all
+agri_data <- cbind(field_info, sensor_data, yield)
+agri_data
+# New field
+new_field <- data.frame(
+FieldID = 3,
+Crop = "Maize",
+Moisture = 40,
+Temp = 31,
+ExpectedYield = 4.1
+)
+agri_data <- rbind(agri_data, new_field)
+agri_data
