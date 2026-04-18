@@ -1,0 +1,17 @@
+#Retail Sales Analytics System
+products <- data.frame(
+ProductID = c(1, 2, 3, 4),
+ProductName = c("Mobile", "Laptop", "Tablet", "Smart Watch")
+)
+sales_qty <- data.frame(
+ProductID = c(1, 2, 3),
+UnitsSold = c(120, 80, 60)
+)
+revenue <- data.frame(
+ProductID = c(1, 2, 4),
+Revenue = c(1200000, 4000000, 900000)
+)
+# FULL JOIN
+sales_data <- merge(products, sales_qty, by = "ProductID", all = TRUE)
+sales_data <- merge(sales_data, revenue, by = "ProductID", all = TRUE)
+sales_data
