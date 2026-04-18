@@ -1,0 +1,20 @@
+#Hospital Information System
+patients <- data.frame(
+PatientID = c(201, 202, 203),
+Name = c("Suresh", "Lakshmi", "Arjun"),
+Age = c(45, 38, 52)
+)
+diagnosis <- data.frame(
+PatientID = c(201, 203),
+Disease = c("Diabetes", "Cardiac")
+)
+billing <- data.frame(
+PatientID = c(201, 202, 203),
+ 
+Amount = c(15000, 12000, 25000)
+)
+# Merge patients with diagnosis
+hospital_data <- merge(patients, diagnosis, by = "PatientID", all.x = TRUE)
+# Merge with billing
+hospital_data <- merge(hospital_data, billing, by = "PatientID")
+hospital_data
