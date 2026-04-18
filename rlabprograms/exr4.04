@@ -1,0 +1,19 @@
+#Product Inventory System
+products <- data.frame(
+ProductID = c(1, 2, 3),
+ProductName = c("Pen", "Book", "Bag")
+)
+stock <- data.frame(
+Quantity = c(100, 50, 30)
+)
+# Join columns
+inventory <- cbind(products, stock)
+inventory
+# Add new product
+new_product <- data.frame(
+ProductID = 4,
+ProductName = "Bottle",
+Quantity = 75
+)
+inventory <- rbind(inventory, new_product)
+inventory
