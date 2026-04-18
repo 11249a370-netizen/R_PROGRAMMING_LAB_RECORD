@@ -1,0 +1,29 @@
+#4.Implement data frames in R. Write a program to join columns and rows in a data frame
+#College Student Record System
+# Student details
+students <- data.frame(
+RollNo = c(101, 102, 103),
+Name = c("Ravi", "Meena", "Karthik"),
+Dept = c("CSE", "ECE", "IT")
+)
+ 
+# Student marks
+marks <- data.frame(
+Marks = c(78, 85, 90)
+)
+ 
+# Join columns
+student_data <- cbind(students, marks)
+student_data
+ 
+# Add new student records
+new_students <- data.frame(
+RollNo = c(104),
+Name = c("Anjali"),
+Dept = c("CSE"),
+Marks = c(88)
+)
+ 
+final_data <- rbind(student_data, new_students)
+final_data
+ 
