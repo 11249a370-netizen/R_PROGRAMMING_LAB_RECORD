@@ -1,0 +1,22 @@
+#University Academic Management System
+Scenario
+students <- data.frame(
+RollNo = c(1, 2, 3),
+Name = c("Arun", "Bina", "Charan"),
+Dept = c("CSE", "ECE", "IT")
+)
+marks <- data.frame(
+RollNo = c(1, 2, 3),
+Sem1 = c(78, 82, 90),
+Sem2 = c(80, 85, 88)
+)
+attendance <- data.frame(
+ 
+RollNo = c(1, 2, 3),
+Attendance = c(92, 88, 95)
+)
+# Merge student details and marks
+student_data <- merge(students, marks, by = "RollNo")
+# Merge with attendance
+final_records <- merge(student_data, attendance, by = "RollNo")
+final_records
