@@ -1,0 +1,5 @@
+Online Form Input Cleanup
+input <- c(" R Programming ", " Data Science ", " AI ")
+clean_input <- trimws(input)
+clean_input
+ 
