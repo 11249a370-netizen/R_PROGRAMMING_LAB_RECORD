@@ -1,0 +1,4 @@
+#Sentence Word Count
+sentence <- "R is a powerful programming language"
+word_count <- length(strsplit(sentence, " ")[[1]])
+word_count
