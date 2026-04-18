@@ -1,0 +1,15 @@
+#E-Commerce Order System (Combination of Data Structures)
+prices <- c(1200, 850, 560)
+customer <- list(
+CustomerID = 301,
+Name = "Anjali",
+City = "Chennai"
+)
+orders <- data.frame(
+Item = c("Phone", "Headset", "Charger"),
+Price = prices
+)
+prices
+customer
+orders
+ 
