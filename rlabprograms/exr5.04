@@ -1,0 +1,4 @@
+#Product Code Validation
+product_codes <- c("PRD101", "PRD202", "ABC303")
+valid_codes <- startsWith(product_codes, "PRD")
+valid_codes
