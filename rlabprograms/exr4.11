@@ -1,0 +1,22 @@
+#Corporate Employee Payroll System
+emp_details <- data.frame(
+EmpID = c(101, 102, 103),
+Name = c("Rahul", "Sneha", "Kiran"),
+Dept = c("IT", "HR", "Finance")
+)
+ 
+salary <- data.frame(
+EmpID = c(101, 102),
+Basic = c(30000, 35000),
+HRA = c(6000, 7000),
+DA = c(3000, 3500)
+)
+rating <- data.frame(
+EmpID = c(101, 103),
+Rating = c(4.5, 4.8)
+)
+# LEFT JOIN (keep all employees)
+payroll <- merge(emp_details, salary, by = "EmpID", all.x = TRUE)
+# Merge with ratings
+payroll <- merge(payroll, rating, by = "EmpID", all.x = TRUE)
+payroll
