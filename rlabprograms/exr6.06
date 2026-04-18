@@ -1,0 +1,8 @@
+#Sales Report System (Data Frames)
+sales <- data.frame(
+Month = c("Jan", "Feb", "Mar"),
+Sales = c(50000, 62000, 58000)
+)
+total_sales <- sum(sales$Sales)
+total_sales
+ 
