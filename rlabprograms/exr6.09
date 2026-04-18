@@ -1,0 +1,14 @@
+#Bank Account Management
+balances <- c(5000, 5200, 5100)
+customer <- list(
+AccountNo = 12345,
+Name = "Suresh"
+)
+transactions <- data.frame(
+Date = c("01-01", "02-01", "03-01"),
+Amount = c(-500, 1000, -200)
+)
+balances
+customer
+transactions
+ 
