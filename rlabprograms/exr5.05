@@ -1,0 +1,5 @@
+#Text Replacement in Reports
+report <- "error in file, error in system, error occurred"
+updated_report <- gsub("error", "issue", report)
+updated_report
+ 
