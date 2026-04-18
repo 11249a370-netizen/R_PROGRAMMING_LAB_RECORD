@@ -1,0 +1,10 @@
+#6.Implement different data structures in R (Vectors, Lists, Data Frames)
+#Student Marks Processing (Vectors)
+Vector is suitable because all values are of the same data type.
+marks <- c(78, 85, 90, 88, 76)
+total <- sum(marks)
+average <- mean(marks)
+highest <- max(marks)
+total
+average
+highest
