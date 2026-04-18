@@ -1,0 +1,12 @@
+#Smart City Water Usage Monitoring
+water_usage_status <- function(litres){
+if(litres <= 500){
+"Normal"
+} else if(litres <= 1000){
+"High Usage"
+} else {
+ 
+"Critical"
+}
+}
+water_usage_status(1200)
