@@ -1,0 +1,10 @@
+#College Student Database (Data Frames)
+Data frame is best for structured tabular data.
+students <- data.frame(
+ 
+RollNo = c(1, 2, 3),
+Name = c("Anitha", "Karthik", "Meena"),
+Dept = c("CSE", "ECE", "IT"),
+Marks = c(85, 78, 92)
+)
+students
