@@ -1,0 +1,28 @@
+#University Student Data Cleaning System
+
+#Raw Data (Before Cleaning)
+students <- data.frame(
+Name = c(" Gayathri ", "RAVI ", " meena"),
+Email = c("Gayu@UNIV.edu", "ravi@univ.edu", "meena@gmail.com"),
+Department = c(" cse", "ECE ", " Cse ")
+)
+students
+#Step-by-Step String Cleaning
+
+# Remove Extra Spaces (trimws())
+students$Name <- trimws(students$Name)
+students$Department <- trimws(students$Department)
+# Standardize Case (toupper() / tolower())
+students$Name <- toupper(students$Name)
+ 
+students$Email <- tolower(students$Email)
+students$Department <- toupper(students$Department)
+
+# Extract Email Username (sub())
+students$Username <- sub("@.*", "", students$Email)
+ #Validate University Emails (grepl())
+students$ValidEmail <- grepl("@univ.edu$", students$Email)
+
+ #Filter Only Valid Records
+clean_students <- students[students$ValidEmail == TRUE, ]
+clean_students
