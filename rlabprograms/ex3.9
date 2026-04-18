@@ -1,0 +1,10 @@
+#Bank Loan EMI Calculator System
+calculate_emi <- function(principal, rate, years){
+monthly_rate <- rate / (12 * 100)
+months <- years * 12
+emi <- (principal * monthly_rate * (1 + monthly_rate)^months) /
+((1 + monthly_rate)^months - 1)
+ 
+return(round(emi, 2))
+}
+calculate_emi(500000, 7.5, 10)
