@@ -1,0 +1,8 @@
+#5.Implement different String Manipulation functions in R.
+#Employee Name Standardization
+names <- c("arun", "Bala", "chitra")
+upper_names <- toupper(names)
+name_length <- nchar(upper_names)
+upper_names
+name_length
+ 
