@@ -1,0 +1,25 @@
+#Hospital Patient Records
+patient_info <- data.frame(
+PatientID = c(201, 202),
+Name = c("Suresh", "Lakshmi"),
+Age = c(45, 38)
+)
+ 
+treatment_cost <- data.frame(
+Cost = c(12000, 15000)
+)
+ 
+# Combine column-wise
+patient_records <- cbind(patient_info, treatment_cost)
+patient_records
+ 
+# Add new patient
+new_patient <- data.frame(
+PatientID = 203,
+Name = "Arjun",
+Age = 50,
+Cost = 18000
+)
+patient_records <- rbind(patient_records, new_patient)
+patient_records
+ 
