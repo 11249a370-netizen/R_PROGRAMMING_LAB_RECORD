@@ -1,0 +1,33 @@
+#University Academic Management System
+# Student details
+ 
+students <- data.frame(
+RollNo = c(1, 2, 3),
+Name = c("Arun", "Bina", "Charan"),
+Dept = c("CSE", "ECE", "IT")
+)
+# Semester marks
+marks <- data.frame(
+Sem1 = c(78, 82, 90),
+Sem2 = c(80, 85, 88)
+)
+# Attendance
+attendance <- data.frame(
+Attendance = c(92, 88, 95)
+)
+# Combine all columns
+student_records <- cbind(students, marks, attendance)
+student_records
+ 
+# New admissions
+new_students <- data.frame(
+RollNo = c(4, 5),
+Name = c("Deepa", "Eshan"),
+Dept = c("CSE", "IT"),
+Sem1 = c(85, 89),
+Sem2 = c(87, 91),
+Attendance = c(90, 93)
+)
+# Add rows
+final_records <- rbind(student_records, new_students)
+final_records
