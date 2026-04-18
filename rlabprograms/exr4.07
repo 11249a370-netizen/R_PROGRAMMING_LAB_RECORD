@@ -1,0 +1,28 @@
+#Hospital Information System
+# Patient details
+patients <- data.frame(
+PatientID = c(201, 202),
+Name = c("Suresh", "Lakshmi"),
+Age = c(45, 38)
+)
+# Diagnosis
+diagnosis <- data.frame(
+Disease = c("Diabetes", "Hypertension")
+)
+# Billing
+billing <- data.frame(
+Amount = c(15000, 12000)
+)
+# Combine all
+hospital_data <- cbind(patients, diagnosis, billing)
+hospital_data
+# New patient record
+new_patient <- data.frame(
+PatientID = 203,
+Name = "Arjun",
+Age = 52,
+Disease = "Cardiac",
+Amount = 25000
+)
+hospital_data <- rbind(hospital_data, new_patient)
+hospital_data
