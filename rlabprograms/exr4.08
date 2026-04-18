@@ -1,0 +1,27 @@
+#Retail Sales Analytics System
+# Product details
+products <- data.frame(
+ProductID = c(1, 2, 3),
+ProductName = c("Mobile", "Laptop", "Tablet")
+)
+# Sales quantity
+sales_qty <- data.frame(
+UnitsSold = c(120, 80, 60)
+)
+# Revenue
+revenue <- data.frame(
+Revenue = c(1200000, 4000000, 1800000)
+)
+# Combine data
+sales_data <- cbind(products, sales_qty, revenue)
+sales_data
+# Add new product
+new_product <- data.frame(
+ProductID = 4,
+ 
+ProductName = "Smart Watch",
+UnitsSold = 90,
+Revenue = 900000
+)
+sales_data <- rbind(sales_data, new_product)
+sales_data
