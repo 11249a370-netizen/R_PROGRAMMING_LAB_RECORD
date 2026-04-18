@@ -1,0 +1,13 @@
+#Online Exam System
+subject_marks <- c(78, 85, 88)
+student_profile <- list(
+Name = "Arun",
+RollNo = 105,
+Marks = subject_marks
+)
+class_results <- data.frame(
+RollNo = c(101, 102, 103),
+Total = c(240, 255, 270)
+)
+student_profile
+class_results
