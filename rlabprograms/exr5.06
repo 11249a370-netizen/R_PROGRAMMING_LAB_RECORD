@@ -1,0 +1,7 @@
+#Password Strength Checker
+password <- "secure123"
+if(nchar(password) >= 8){
+print("Strong Password")
+} else {
+print("Weak Password")
+}
