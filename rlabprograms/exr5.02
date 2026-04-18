@@ -1,0 +1,8 @@
+#Student Email Processing
+emails <- c("arun@gmail.com", "meena@yahoo.com", "ravi@outlook.com")
+usernames <- sub("@.*", "", emails)
+usernames
+ 
+Question
+3:
+Online Form Input 
