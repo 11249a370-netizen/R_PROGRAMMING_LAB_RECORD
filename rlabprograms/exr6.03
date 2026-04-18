@@ -1,0 +1,12 @@
+#Employee Profile Storage (Lists)
+List is suitable because it supports different data types.
+employee <- list(
+ID = 101,
+Name = "Gayathri",
+Salary = 45000,
+Department = "IT"
+)
+employee
+employee$Name
+employee$Salary
+ 
