@@ -1,0 +1,4 @@
+#File Extension Extraction
+files <- c("data.csv", "report.pdf", "image.png")
+extensions <- sub(".*\\.", "", files)
+extensions
