@@ -1,6 +1,6 @@
 #Traffic Monitoring System
 vehicle_count <- 350
-location <- "Highway Road"
+location <- "BYPASS Road"
 avg_speed <- 45.6
 congested <- TRUE
 vehicle_count
