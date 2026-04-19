@@ -1,6 +1,6 @@
 #Movie Rating System
 movie_title <- "Inception"
-rating <- 8.8
+rating <- 7.9
 reviews <- 1200
 available <- TRUE
 movie_title
