@@ -1,6 +1,6 @@
 #Employee Bonus Eligibility
 Answer:
-experience <- 6
+experience <- 6.5
 rating <- 4.5
  
 if(experience > 5 & rating > 4){
