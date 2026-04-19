@@ -1,7 +1,7 @@
 #Employee Salary Record
 emp_id <- 5001
 salary <- 45000.75
-department <- "IT"
+department <- "CSE"
 is_permanent <- TRUE
 emp_id
 salary
