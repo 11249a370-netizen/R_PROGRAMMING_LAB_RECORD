@@ -1,5 +1,5 @@
 #Online Discount System
-amount <- 4200
+amount <- 4300
 premium_member <- TRUE
 if(amount > 5000 | premium_member){
 print("Discount Applied")
