@@ -1,5 +1,5 @@
 #Electricity Bill Slab
-units <- 250
+units <- 350
 if(units < 100){
 print("Low Usage")
 } else if(units <= 300){
