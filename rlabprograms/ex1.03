@@ -1,6 +1,6 @@
 #Online Shopping Cart
-product_name <- "Laptop"
-price <- 55000
+product_name <- "mobile"
+price <- 25000
 stock_available <- 25
 discount_eligible <- FALSE
 product_name
