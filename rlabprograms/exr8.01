@@ -1,0 +1,21 @@
+#8. Create pie charts and bar charts using R.
+#University Course Enrollment
+# Data
+departments <- c("CSE", "ECE", "IT", "Mechanical")
+students <- c(120, 80, 60, 40)
+# Pie Chart
+pie(
+students,
+labels = departments,
+main = "Student Enrollment per Department",
+col = c("skyblue", "orange", "green", "pink")
+)
+# Bar Chart
+barplot(
+students,
+names.arg = departments,
+main = "Number of Students per Department",
+xlab = "Department",
+ylab = "Number of Students",
+col = c("skyblue", "orange", "green", "pink")
+)
