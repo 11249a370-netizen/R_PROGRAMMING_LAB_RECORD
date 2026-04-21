@@ -1,0 +1,27 @@
+# Load CSV file
+sales <- read.csv("sales_data.csv")
+
+# View data
+head(sales)
+str(sales)
+summary(sales)
+
+# Data Cleaning
+sales$Product <- trimws(sales$Product)
+sales$Category <- trimws(sales$Category)
+sales$Date <- as.Date(sales$Date, format="%Y-%m-%d")
+
+# Add TotalSales column
+sales$TotalSales <- sales$Quantity * sales$Price
+
+# Total sales per product
+total_sales_product <- aggregate(TotalSales ~ Product, data=sales, sum)
+print(total_sales_product)
+
+# Top-selling product
+top_product <- total_sales_product[which.max(total_sales_product$TotalSales), ]
+print(top_product)
+
+# Total quantity per category
+total_qty_category <- aggregate(Quantity ~ Category, data=sales, sum)
+print(total_qty_category)
