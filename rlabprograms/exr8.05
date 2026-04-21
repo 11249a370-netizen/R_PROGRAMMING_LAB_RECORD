@@ -1,0 +1,20 @@
+#Agricultural Crop Production
+# Data
+crop <- c("Rice", "Wheat", "Maize", "Onion")
+production <- c(200, 150, 100, 50)
+# Pie Chart
+pie(
+production,
+labels = crop,
+main = "Crop Production Distribution",
+col = c("gold", "green", "orange", "brown")
+)
+# Bar Chart
+barplot(
+production,
+names.arg = crop,
+main = "Crop Production in Tonnes",
+xlab = "Crop",
+ylab = "Production (Tonnes)",
+col = c("gold", "green", "orange", "brown")
+)
