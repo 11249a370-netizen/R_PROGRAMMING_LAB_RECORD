@@ -1,0 +1,12 @@
+#Real-World Summary Question (Exam-Perfect)
+scores <- c(85, 90, 88)
+profile <- list(
+Name = "Gayathri",
+Age = 21,
+Scores = scores
+ 
+)
+records <- data.frame(
+Subject = c("Math", "CS", "Physics"),
+Marks = scores
+)
