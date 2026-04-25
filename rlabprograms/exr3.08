@@ -6,4 +6,4 @@ return("Eligible to Vote")
 return("Not Eligible to Vote")
 }
 }
-check_voting(17)
+check_voting(20)
