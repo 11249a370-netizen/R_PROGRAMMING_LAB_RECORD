@@ -1,7 +1,7 @@
 #Employee Management System
 employee_details <- data.frame(
 EmpID = c(1, 2, 3),
-Name = c("Amit", "Sneha", "Raj"),
+Name = c("Amit", "siva", "sakthi"),
 Dept = c("HR", "IT", "Finance")
 )
 salary_details <- data.frame(
