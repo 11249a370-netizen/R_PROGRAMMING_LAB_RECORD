@@ -15,4 +15,3 @@ return(result)
 calculate_gpa(c(78, 85, 90, 72, 80))
  
  
-Question
