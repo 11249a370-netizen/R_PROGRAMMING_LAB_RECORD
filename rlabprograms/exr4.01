@@ -3,7 +3,7 @@
 # Student details
 students <- data.frame(
 RollNo = c(101, 102, 103),
-Name = c("Ravi", "Meena", "Karthik"),
+Name = c("Ravi", "Chandra", "Karthik"),
 Dept = c("CSE", "ECE", "IT")
 )
  
