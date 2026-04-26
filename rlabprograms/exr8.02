@@ -1,7 +1,7 @@
 # Retail Store Sales Distribution
 # Data
 category <- c("Electronics", "Clothing", "Accessories", "Home Appliances")
-sales <- c(150000, 75000, 50000, 25000)
+sales <- c(100000, 75000, 50000, 20600)
 # Pie Chart
 pie(
 sales,
