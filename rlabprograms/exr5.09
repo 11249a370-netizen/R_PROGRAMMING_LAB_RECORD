@@ -1,5 +1,5 @@
 #Student Name Abbreviation
-names <- c("Gayathri", "Karthik", "Anitha")
+names <- c("srivaishanav", "Karthik", "Anitha")
 abbr <- substr(names, 1, 3)
 abbr
  
