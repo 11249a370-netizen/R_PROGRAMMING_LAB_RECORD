@@ -2,7 +2,7 @@
 Scenario
 students <- data.frame(
 RollNo = c(1, 2, 3),
-Name = c("Arun", "Bina", "Charan"),
+Name = c("Arun", "SRIVANI", "Charan"),
 Dept = c("CSE", "ECE", "IT")
 )
 marks <- data.frame(
