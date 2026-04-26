@@ -10,3 +10,5 @@ records <- data.frame(
 Subject = c("Math", "CS", "Physics"),
 Marks = scores
 )
+profile
+records
