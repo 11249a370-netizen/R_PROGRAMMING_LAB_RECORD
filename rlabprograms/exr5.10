@@ -1,4 +1,4 @@
 #Search Operation in Text
-names <- c("Arun", "Bala", "Ravi", "John")
+names <- c("Arun", "Bala", "Ravi", "jai")
 matched_names <- grep("a", names, value = TRUE)
 matched_names
