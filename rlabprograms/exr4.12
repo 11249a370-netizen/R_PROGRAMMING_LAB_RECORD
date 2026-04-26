@@ -1,7 +1,7 @@
 #Hospital Information System
 patients <- data.frame(
 PatientID = c(201, 202, 203),
-Name = c("Suresh", "Lakshmi", "Arjun"),
+Name = c("Suresh", "jaya", "Arjun"),
 Age = c(45, 38, 52)
 )
 diagnosis <- data.frame(
