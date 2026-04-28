@@ -8,7 +8,7 @@ pie(
 count,
 labels = grades,
 main = "Grade Distribution",
-col = c("gold", "lightblue", "pink", "lightgreen")
+col = c("gold", "violet", "pink", "lightgreen")
 )
 # Bar Chart
 barplot(
